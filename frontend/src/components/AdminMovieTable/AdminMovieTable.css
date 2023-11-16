@@ -1,0 +1,100 @@
+/* AdminMovieTable.css */
+.movie-table-container {
+  margin: 20px auto;
+  width: 75%; /* Adjust width as needed */
+  overflow-x: auto;
+  border-radius: 8px;
+  background-color: #2c2c2c; /* Dark theme color */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.movie-table {
+  border-collapse: collapse;
+  width: 100%;
+  background-color: transparent; /* Makes the table blend into the container */
+  color: #fff; /* Text color */
+}
+
+.movie-table th,
+.movie-table td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #3c3c3c; /* Subtle border for separation */
+}
+
+.movie-table thead {
+  background-color: #1f1f1f; /* Slightly darker background for the table header */
+}
+
+.movie-table th {
+  font-size: 1.1em; /* Slightly larger font size for headers */
+}
+
+.movie-table tbody tr:hover {
+  background-color: #3c3c3c; /* Hover effect for rows */
+}
+
+.movie-cover {
+  width: 100px; /* Larger width for better visibility */
+  
+}
+
+.movie-table tbody td {
+  vertical-align: middle; /* Aligns content in the middle of the cell */
+}
+
+button {
+  padding: 5px 10px;
+  margin-right: 5px;
+  cursor: pointer;
+  background-color: #e09f3e; /* A gold-like color for the buttons */
+  color: #2c2c2c; /* Dark text for contrast */
+  border: none;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #f1c069; /* Lighter color on hover */
+}
+
+button:last-child {
+  margin-right: 0;
+}
+
+button:focus {
+  outline: none;
+}
+
+/* Scrollable tbody */
+.movie-table tbody {
+  display: block;
+  max-height: 500px; /* Adjust based on your preference */
+  overflow-y: scroll;
+}
+
+.movie-table thead,
+.movie-table tbody tr {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+}
+
+/* Ensure that the header cells align with the body cells */
+.movie-table thead th {
+  position: sticky;
+  top: 0;
+  background-color: #1f1f1f; /* Slightly darker background for the table header */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .movie-table-container {
+    width: 95%; /* Full width on small screens */
+    margin: 10px auto;
+  }
+
+  .movie-cover {
+    width: 80px; /* Smaller image on small screens */
+  }
+}

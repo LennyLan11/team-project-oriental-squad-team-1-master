@@ -1,0 +1,32 @@
+.date-button{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white;
+    border-radius: 1rem;
+    padding: 20px;
+    max-width: 100%;
+    margin: 10px;
+}
+
+.date-button-selected{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    padding: 20px;
+    max-width: 100%;
+    background-color: #1DE782;
+    border: none;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.date-button:hover{
+    background-color: #1DE782;
+    border: none;
+    cursor: pointer;
+}
+
